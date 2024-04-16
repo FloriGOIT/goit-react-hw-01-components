@@ -1,0 +1,24 @@
+.profile {display: flex;
+          flex-direction: column;
+          margin: 50px;
+          background-color: white;
+          text-align: center;
+          width: 300px;}
+.description {padding: 30px 20px 20px 20px;}
+.description .avatar {width: 140px;
+                      height:140px;
+                      border-radius: 50%;}
+.description .name {color: black;
+       font-weight: 700;}
+.description p {color: gray;}
+.stats {display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        padding-inline-start : 0px;
+        background-color: azure;
+        margin: 0;
+        padding: 20px;}
+.stats li {display: flex;
+           gap: 10px;
+           flex-direction: column;}
