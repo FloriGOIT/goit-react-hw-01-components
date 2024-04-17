@@ -3,7 +3,9 @@
           margin: 50px;
           background-color: white;
           text-align: center;
-          width: 300px;}
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
 .description {padding: 30px 20px 20px 20px;}
 .description .avatar {width: 140px;
                       height:140px;
@@ -16,9 +18,15 @@
         list-style: none;
         justify-content: space-between;
         padding-inline-start : 0px;
-        background-color: azure;
-        margin: 0;
-        padding: 20px;}
+        margin: 0; }
 .stats li {display: flex;
-           gap: 10px;
-           flex-direction: column;}
+           flex-direction: column;
+           background-color: azure;
+           width: 100px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           border: 0.5px solid rgb(125, 173, 173, 0.5);}
+.stats li:first-child {border-bottom-left-radius: 10px;}
+.stats li:last-child {border-bottom-right-radius: 10px;}
+.quantity {font-weight: 700;
+           padding-top: 10px;}

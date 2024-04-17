@@ -10,6 +10,5 @@ export const App = () =>
       location={user.location}
       avatar={user.avatar}
       stats={user.stats}
-
     />
 </>);};
