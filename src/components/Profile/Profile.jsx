@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types'
 import user from '../Profile/user.json'
 import css from '../Profile/Profile.module.css'
 
-const Profile = () =>
+const Profile = (props) =>
 {
 const {username, tag, location, avatar, stats:{followers, views, likes} } = user;
 return(     
@@ -34,5 +35,11 @@ return(
         </div>
         )
 }
+
+Profile.propTypes={props:PropTypes.objectOf(PropTypes.shape({username: PropTypes.string.isRequired,
+                                                             tag: PropTypes.string.isRequired,
+                                                             location: PropTypes.string.isRequired,
+                                                             avatar: PropTypes.string.isRequired,
+                                                             stats: PropTypes.object.isRequired}))}
 
 export default Profile

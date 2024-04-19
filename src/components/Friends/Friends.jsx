@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 import css from './Friends.module.css'
 
 const Friends = ({friends}) =>
@@ -13,7 +13,10 @@ const Friends = ({friends}) =>
                                               </li>)}
             </ul>
           </>)}
-
-
+ Friends.propTypes={friends:PropTypes.arrayOf(PropTypes.shape({avatar:PropTypes.string.isRequired,
+                                                               name:PropTypes.string.isRequired,
+                                                               isOnline:PropTypes.bool.isRequired,
+                                                               id:PropTypes.number.isRequired}))}
 
 export default Friends
+

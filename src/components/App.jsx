@@ -4,6 +4,8 @@ import Statistics from './Statistics/Statistics.jsx'
 import data from './Statistics/data.json'
 import Friends from './Friends/Friends.jsx'
 import friendsData from './Friends/friends.json'
+import Transactions from './Transactions/Transactions.jsx'
+import transactionsData from './Transactions/transactions.json'
 
 export const App = () => 
 {return (<>
@@ -19,4 +21,5 @@ export const App = () =>
             <Statistics stats={data} />
             <br/>
             <Friends friends={friendsData}/>
+            <Transactions items={transactionsData}/>
          </>);};

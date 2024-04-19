@@ -1,0 +1,13 @@
+.transaction-history {margin: 40px;
+                      align-items: center;
+                      box-shadow: 0px 3px 5px 2px rgb(174, 180, 180);}
+.transaction-history  * {width: 200px;}
+thead {color:white}
+tbody {text-align: center;}             
+td {padding:10px 10px; 
+    color: rgba(0, 0, 1, 0.499);
+    font-weight: 500;}
+tbody tr:nth-child(odd){ background-color: whitesmoke;}
+tbody tr:nth-child(even){ background-color: rgb(212, 238, 237);}
+thead {background-color: rgb(132, 193, 228);
+       height: 50px;}
