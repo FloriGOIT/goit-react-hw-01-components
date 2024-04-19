@@ -1,5 +1,5 @@
 import css from '../Statistics/Statistics.module.css'
-//import data from '../Statistics/data.json
+
 const GetRandomHexColor = () => 
 {const letters = "0123456789ABCDEF";
  let color = "#";
